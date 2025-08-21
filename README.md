@@ -1,5 +1,28 @@
-﻿Mô tả Game Play:
-Game có chức năng play,exit, pause game,resume, Màn hình thắng thua.
-Game play có 3 round, mỗi round zombie spawn 3 vị trí khác nhau số lượng tăng theo từng round, zombie spawn ra sẽ luôn luôn di chuyển tới tấn công người chơi.
-player dùng súng bắn zombie, R nạp đạn, CAPSLOCK khóa tâm chuột, CTRL zoom ngắm khi bắn, có score và level, giết 1 zombie -> +1 score tích đủ 5đ lên 1 level -> +4% damage.
-Player giết hết zombie -> Game Winner, player die -> game over.
+﻿## 3D Game  Zombie Shooting
+
+Mô tả ngắn: Game bắn zombie góc nhìn người chơi với nhiều vòng chơi, cơ chế điểm/level và các màn hình trạng thái đầy đủ.
+
+### Mô tả Game Play
+- Có các chức năng: Play, Exit, Pause Game, Resume.
+- Hiển thị màn hình Thắng/Thua (Win/Lose).
+
+### Vòng chơi
+- Gồm 3 round.
+- Mỗi round, zombie spawn tại 3 vị trí khác nhau, số lượng tăng theo từng round.
+- Zombie sau khi spawn sẽ luôn luôn di chuyển tới tấn công người chơi.
+
+### Điều khiển
+| Hành động | Phím |
+| --- | --- |
+| Nạp đạn | R |
+| Khóa/giải phóng con trỏ chuột | CAPSLOCK |
+| Zoom ngắm khi bắn | CTRL |
+
+### Điểm số và Cấp độ
+- Giết 1 zombie: +1 score.
+- Tích đủ 5 điểm: lên 1 level.
+- Mỗi level: +4% damage.
+
+### Điều kiện Thắng/Thua
+- Player giết hết zombie: Game Winner.
+- Player chết: Game Over.
