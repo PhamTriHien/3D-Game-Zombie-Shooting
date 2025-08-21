@@ -1,0 +1,20 @@
+﻿name: Release
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Upload build to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            Builds/Windows/K24GD01_Shooter.exe
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
